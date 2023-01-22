@@ -13,6 +13,9 @@
   margin: 0;
   font-weight: normal;
 }
+.strong {
+  font-weight: 600;
+}
 
 .header {
   height: 100vh;
@@ -92,13 +95,11 @@ a {
 .content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .description {
   width: 80%;
   display: flex;
-
-  display: flex;
-
   align-self: center;
 }
 .two-columns {
@@ -124,4 +125,58 @@ a {
 }
 .span {
   margin: 30px 0px;
+}
+.digits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.digits_title {
+  margin-top: 100px;
+  display: flex;
+  width: 60%;
+  border: red 1px solid;
+  justify-content: center;
+}
+.digits_title_text {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.digits_subtitle {
+  justify-content: center;
+  border: 1px red solid;
+  width: 60%;
+  margin-top: 20px;
+  display: flex;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  justify-content: space-between;
+}
+.table_cell {
+  width: 250px;
+  border: red 1px solid;
+  margin-top: 60px;
+}
+.table_heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.table_text {
+  line-height: 1.2;
+  font-weight: normal;
+  font-size: 18px;
+}
+.table_text_sourse {
+  margin-top: 20px;
 }
