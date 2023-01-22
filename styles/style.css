@@ -136,7 +136,7 @@ a {
   margin-top: 100px;
   display: flex;
   width: 60%;
-  border: red 1px solid;
+
   justify-content: center;
 }
 .digits_title_text {
@@ -147,7 +147,7 @@ a {
 
 .digits_subtitle {
   justify-content: center;
-  border: 1px red solid;
+
   width: 60%;
   margin-top: 20px;
   display: flex;
@@ -163,7 +163,7 @@ a {
 }
 .table_cell {
   width: 250px;
-  border: red 1px solid;
+
   margin-top: 60px;
 }
 .table_heading {
@@ -179,4 +179,45 @@ a {
 }
 .table_text_sourse {
   margin-top: 20px;
+}
+
+.feynman_content {
+  background-color: #f2f2f2;
+  height: 890px;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feynman_title {
+  margin-top: 100px;
+  width: 648px;
+  line-height: 1.15;
+  font-weight: 600;
+  font-size: 120px;
+  z-index: 1;
+  text-align: center;
+}
+.feynman_subtitle {
+  line-height: 51px;
+  font-weight: normal;
+  font-size: 36px;
+  z-index: 1;
+}
+
+.feynman_img {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 0;
+}
+.feynman_link {
+  line-height: 51px;
+  font-size: 36px;
+  position: absolute;
+  right: 48px;
+  top: 50%;
 }
