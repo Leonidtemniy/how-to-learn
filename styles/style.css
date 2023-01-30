@@ -12,9 +12,11 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color: #fff;
+  background-color: #f2f2f2;
   display: flex;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 .logo {
   position: absolute;
@@ -26,9 +28,8 @@
   top: 30px;
 }
 .header__title {
-  position: absolute;
   align-self: center;
-  left: 64px;
+  margin-left: 64px;
   max-width: 730px;
   z-index: 2;
   font-size: 102px;
@@ -69,8 +70,8 @@ a {
   bottom: 0px;
   right: 0px;
   z-index: 1;
-
-  background-size: cover;
+  object-fit: cover;
+  /* object-position + object-fit: contain  меньше искажает картинку но  object-fit: cover; больше на макет похож */
 }
 .content {
   display: flex;
@@ -81,6 +82,8 @@ a {
   width: 80%;
   display: flex;
   align-self: center;
+  margin: 0;
+  padding: 0;
 }
 .two-columns {
   display: flex;
@@ -116,6 +119,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .digits__title {
   margin-top: 70px;
@@ -157,16 +162,19 @@ a {
   font-size: 18px;
   margin-top: 20px;
 }
-.feynman__content {
-  background-color: #fff;
+.feynman {
+  background-color: #f2f2f2;
   min-height: 890px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .feynman__title {
   margin-top: 100px;
+  margin-bottom: 0;
   max-width: 648px;
   line-height: 1.15;
   font-weight: 600;
@@ -179,6 +187,8 @@ a {
   font-weight: normal;
   font-size: 36px;
   z-index: 1;
+  display: flex;
+  margin-top: 70px;
 }
 .feynman__img {
   width: 867px;
@@ -205,6 +215,8 @@ a {
   padding-bottom: 90px;
   position: relative;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 .kaufman__table_cell_theme_dark {
   width: 200px;
@@ -250,6 +262,8 @@ a {
   background-color: #1f1f1f;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 .footer__columns {
   display: flex;
@@ -261,16 +275,25 @@ a {
 }
 .column__content_copyright {
   flex-basis: 711px;
-  position: relative;
+  /* position: relative; */
+  display: flex;
 }
 .footer__author {
-  position: absolute;
-  left: 0;
+  /* position: absolute; */
+  margin-left: 0;
   margin-top: 16px;
-  bottom: 16px;
+  margin-bottom: 16px;
   color: #fff;
   font-size: 18px;
   line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.logo_place_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .footer__column_heading {
   line-height: 30px;
