@@ -19,13 +19,13 @@
   padding: 0;
 }
 .logo {
-  position: absolute;
   width: 228px;
   height: 32px;
 }
 .logo_place_header {
   left: 64px;
   top: 30px;
+  position: absolute;
 }
 .header__title {
   align-self: center;
@@ -37,6 +37,7 @@
   line-height: 96px;
 }
 .header__subtitle {
+  margin: 0;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -53,8 +54,6 @@ a {
 .header__link {
   color: #2f80ed;
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
   height: 568px;
@@ -71,7 +70,8 @@ a {
   right: 0px;
   z-index: 1;
   object-fit: cover;
-  /* object-position + object-fit: contain  меньше искажает картинку но  object-fit: cover; больше на макет похож */
+  /* object-position + object-fit: contain  меньше искажает картинку,
+   но  object-fit: cover; больше на макет похож, поэтому оставил так */
 }
 .content {
   display: flex;
@@ -80,6 +80,7 @@ a {
 }
 .description {
   width: 80%;
+  min-width: 784px;
   display: flex;
   align-self: center;
   margin: 0;
@@ -106,6 +107,7 @@ a {
   flex-direction: column;
   font-size: 24px;
   line-height: 34px;
+  font-weight: normal;
 }
 .two-columns__paragraph {
   padding-bottom: 30px;
@@ -120,7 +122,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding-bottom: 100px;
 }
 .section-title {
   margin: 0;
@@ -140,7 +142,7 @@ a {
   display: flex;
   line-height: 34px;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: normal;
 }
 .table {
   display: flex;
@@ -162,6 +164,7 @@ a {
   line-height: 1.2;
   font-weight: normal;
   font-size: 18px;
+  margin: 0;
   margin-top: 20px;
 }
 .feynman {
@@ -175,8 +178,8 @@ a {
   padding: 0;
 }
 .feynman__title {
+  margin: 0;
   margin-top: 100px;
-  margin-bottom: 0;
   max-width: 648px;
   line-height: 1.15;
   font-weight: 600;
@@ -190,6 +193,7 @@ a {
   font-size: 36px;
   z-index: 1;
   display: flex;
+  margin: 0;
   margin-top: 70px;
 }
 .feynman__img {
@@ -203,6 +207,7 @@ a {
 .feynman__link {
   line-height: 51px;
   font-size: 36px;
+  font-weight: normal;
   position: absolute;
   right: 48px;
   top: 50%;
@@ -218,7 +223,10 @@ a {
   position: relative;
   overflow: hidden;
   margin: 0;
-  padding: 0;
+  padding: 0 0 90px;
+}
+.section-title_theme_dark {
+  padding-bottom: 0;
 }
 .table__cell_theme_dark {
   width: 200px;
@@ -235,7 +243,6 @@ a {
 }
 .section-subtitle_theme_dark {
   padding-top: 20px;
-  font-weight: normal;
   color: #fff;
 }
 .kaufman__triangle {
@@ -254,21 +261,21 @@ a {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 60px 0 40px;
 }
 .footer__columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  margin-top: 60px;
-  padding-bottom: 40px;
 }
 .footer__column {
 }
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer_column_comtent_social {
@@ -278,9 +285,6 @@ a {
   color: #fff;
   font-size: 18px;
   line-height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .logo_place_footer {
   display: flex;
@@ -294,9 +298,13 @@ a {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
+  margin: 0;
   margin-bottom: 20px;
 }
 .footer__column-links {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -304,7 +312,6 @@ a {
   font-size: 18px;
   font-weight: normal;
   list-style-type: none;
-  padding: 0;
 }
 .footer__column_link {
   display: flex;
