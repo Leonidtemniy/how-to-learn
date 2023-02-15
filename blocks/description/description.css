@@ -1,0 +1,8 @@
+.description {
+  min-width: 784px;
+  display: flex;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
